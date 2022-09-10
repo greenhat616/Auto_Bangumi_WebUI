@@ -1,13 +1,13 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router';
 import 'vue-global-api'
 import 'modern-normalize/modern-normalize.css'
-import router from './router';
-import { Icon } from '@vicons/utils'
+import { useCommonComponents } from './components/common/index';
 
 const app = createApp(App)
 
-app.component('Icon', Icon);
+useCommonComponents(app);
 
 app.use(router)
 

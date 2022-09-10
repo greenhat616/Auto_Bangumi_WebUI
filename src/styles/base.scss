@@ -1,0 +1,19 @@
+:root{
+  @include fontSize(16);
+}
+
+.h1 {
+  @include fontSize(24);
+}
+
+.h2 {
+  @include fontSize(20);
+}
+
+.h3 {
+  @include fontSize(16);
+}
+
+.h-main {
+  @include fontSize(12);
+}

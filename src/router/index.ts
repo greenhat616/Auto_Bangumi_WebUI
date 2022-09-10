@@ -1,29 +1,17 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 
-const YLayout = () => import('../pages/YLayout.vue');
-const YBangumi = () => import('../pages/bangumi/index.vue');
-const YDebug = () => import('../pages/debug/index.vue');
-const YLog = () => import('../pages/journal/index.vue');
+const Home = () => import('@/pages/Home.vue');
 
 const routes = [
   {
     path: '/',
-    component: YLayout,
-    redirect: '/bangumi',
-    children: [
-      {
-        path: 'bangumi',
-        component: YBangumi
-      },
-      {
-        path: 'debug',
-        component: YDebug
-      },
-      {
-        path: 'log',
-        component: YLog
-      }
-    ]
+    component: Home,
+    // children: [
+      // {
+      //   path: 'bangumi',
+      //   component: YBangumi
+      // },
+    // ]
   },
 ]
 
