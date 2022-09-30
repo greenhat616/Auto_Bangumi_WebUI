@@ -1,6 +1,8 @@
+$theme-color: linear-gradient(#3C239F 0%, #793572 100%);
+$theme-color-right: linear-gradient(to right, #372A87 1.53%, #9B4D9C 96.48%);
+
 @mixin fontSize($fs) {
   font-size: #{calc($fs / 10.24)}vw;
-  font-size: clamp(12px, #{calc($fs / 10.24)}vw, #{$fs * 1.25}px);
 }
 
 @mixin abs($dir) {
@@ -51,16 +53,6 @@
     align-items: center;
     flex-wrap: wrap;
   }
-}
-
-@mixin size($width, $height, $min: 0.8, $max: 1.25) {
-  width: $width;
-  min-width: calc($width * $min);
-  max-width: calc(($width * $max));
-
-  height: $height;
-  min-height: calc($height * $min);
-  max-height: calc($height * $max);
 }
 
 @mixin circle($size, $bg: #fff) {
